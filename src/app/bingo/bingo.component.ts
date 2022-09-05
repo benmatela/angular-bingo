@@ -30,7 +30,7 @@ export class BingoComponent implements OnInit {
   }
 
   /**
-   * Initial display of the populated grids
+   * Initial display of the populated grid
    */
   generateInitialGrid() {
     for (let index = 0; index < 5; index++) {
@@ -55,8 +55,8 @@ export class BingoComponent implements OnInit {
     }
   }
 
-  onSpin() {
-    if (this.balls.length > 0) {
+  onDraw() {
+    if (this.balls.length > 1) {
       const random = Math.floor(Math.random() * this.balls.length);
       this.selectedBall = this.balls[random];
       this.balls.splice(random, 1);

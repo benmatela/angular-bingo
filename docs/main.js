@@ -387,7 +387,7 @@ class PageInfoComponent {
     }
 }
 PageInfoComponent.ɵfac = function PageInfoComponent_Factory(t) { return new (t || PageInfoComponent)(); };
-PageInfoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PageInfoComponent, selectors: [["app-page-info"]], inputs: { imgLeft: "imgLeft", info: "info", index: "index" }, decls: 2, vars: 2, consts: [[4, "ngIf"], ["left", ""], [1, "row"], [1, "col-md-6"], ["height", "350", 3, "src"], [1, "col-md-6", "text-white", "row-info"], [1, "header"], ["right", ""]], template: function PageInfoComponent_Template(rf, ctx) { if (rf & 1) {
+PageInfoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PageInfoComponent, selectors: [["app-page-info"]], inputs: { imgLeft: "imgLeft", info: "info", index: "index" }, decls: 2, vars: 2, consts: [[4, "ngIf"], ["imgLeft", ""], [1, "row"], [1, "col-md-6"], ["height", "350", 3, "src"], [1, "col-md-6", "text-white", "row-info"], [1, "header"], ["imgRight", ""]], template: function PageInfoComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, PageInfoComponent_ng_container_0_Template, 10, 3, "ng-container", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PageInfoComponent_ng_container_1_Template, 10, 3, "ng-container", 0);
     } if (rf & 2) {
