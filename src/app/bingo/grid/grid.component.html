@@ -1,8 +1,8 @@
 <div class="border grid-container card mb-2 col">
     <div class="m-2">
         <div class="row">
-            <div *ngFor="let character of bingo" class="col text-center font-bold grid-block grid-header">
-                {{character}}
+            <div *ngFor="let gridItem of gridHeaders" class="col text-center font-bold grid-block grid-header">
+                {{gridItem}}
             </div>
         </div>
         <div class="row" *ngFor="let cards of grid; let i = index;">

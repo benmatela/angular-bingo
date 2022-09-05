@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class GridComponent implements OnInit {
   @Input() grid: string[][] = [];
-  bingo = 'BINGO'.split('');
+  gridHeaders = 'BINGO'.split('');
 
   constructor() {}
 
