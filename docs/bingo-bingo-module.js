@@ -185,6 +185,15 @@ function BingoComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "app-grid", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Remaining Balls");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](24, "json");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
@@ -195,13 +204,15 @@ function BingoComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.selectedBall);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("grid", ctx_r0.grid);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](24, 4, ctx_r0.balls));
 } }
 function BingoComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, null, 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, null, 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Game Over");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "You ran out of balls to draw");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
@@ -268,13 +279,13 @@ class BingoComponent {
     }
 }
 BingoComponent.ɵfac = function BingoComponent_Factory(t) { return new (t || BingoComponent)(); };
-BingoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BingoComponent, selectors: [["app-bingo"]], decls: 6, vars: 2, consts: [[1, "grid-container", "col-12"], [1, "text-center", "text-white", "m-3", "title"], [1, "mt-4"], [4, "ngIf"], ["gameNotOver", ""], [1, "row"], [1, "col"], [1, "container"], [1, "text-center"], [1, "btn", "spin-btn", "m-2", 3, "click"], [3, "grid"], ["gameOver", ""], [1, "text-center", "text-danger", "m-3", "title"]], template: function BingoComponent_Template(rf, ctx) { if (rf & 1) {
+BingoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BingoComponent, selectors: [["app-bingo"]], decls: 6, vars: 2, consts: [[1, "grid-container", "col-12"], [1, "text-center", "text-white", "m-3", "title"], [1, "mt-4"], [4, "ngIf"], ["gameNotOver", ""], [1, "row"], [1, "col"], [1, "container"], [1, "text-center"], [1, "btn", "spin-btn", "m-2", 3, "click"], [3, "grid"], [1, "card"], [1, "text-center", "m-3", "title"], ["gameOver", ""], [1, "text-center", "text-danger", "m-3", "title"], [1, "text-center", "text-white", "m-3", "title", "m-3", "text-center"]], template: function BingoComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Welcome to the Random Ball Bingo Game!");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "hr", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BingoComponent_ng_container_4_Template, 19, 3, "ng-container", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, BingoComponent_ng_container_4_Template, 25, 6, "ng-container", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BingoComponent_ng_container_5_Template, 6, 0, "ng-container", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -282,7 +293,7 @@ BingoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.gameOver);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.gameOver);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _grid_grid_component__WEBPACK_IMPORTED_MODULE_2__["GridComponent"]], styles: [".spin-btn[_ngcontent-%COMP%] {\n  background-color: #72FFFF;\n  font-size: 30px;\n  width: 250px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2JpbmdvLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0kseUJBQUE7RUFDQSxlQUFBO0VBQ0EsWUFBQTtBQUNKIiwiZmlsZSI6ImJpbmdvLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNwaW4tYnRuIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNzJGRkZGO1xuICAgIGZvbnQtc2l6ZTogMzBweDtcbiAgICB3aWR0aDogMjUwcHg7XG59Il19 */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _grid_grid_component__WEBPACK_IMPORTED_MODULE_2__["GridComponent"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["JsonPipe"]], styles: [".spin-btn[_ngcontent-%COMP%] {\n  background-color: #72FFFF;\n  font-size: 30px;\n  width: 250px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2JpbmdvLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0kseUJBQUE7RUFDQSxlQUFBO0VBQ0EsWUFBQTtBQUNKIiwiZmlsZSI6ImJpbmdvLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNwaW4tYnRuIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNzJGRkZGO1xuICAgIGZvbnQtc2l6ZTogMzBweDtcbiAgICB3aWR0aDogMjUwcHg7XG59Il19 */"] });
 
 
 /***/ })
