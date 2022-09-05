@@ -1,0 +1,31 @@
+<div class="grid-container col-12">
+    <h1 class="text-center text-white m-3 title">Welcome to the Random Ball Bingo Game!</h1>
+
+    <hr class="mt-4">
+    <ng-container #gameNotOver *ngIf="!gameOver">
+        <p class="text-center text-white m-3 title">Draw random balls to fill the blocks..</p>
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center text-white m-3 title">{{balls.length}}</h1>
+                <p class="text-center text-white m-3 title">Remaining Balls</p>
+            </div>
+            <div class="col">
+                <h1 class="text-center text-white m-3 title">{{selectedBall}}</h1>
+                <div class="container">
+                    <div class="text-center">
+                        <button class="btn spin-btn m-2" (click)="onSpin()">Draw!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <app-grid [grid]="grid"></app-grid>
+        </div>
+    </ng-container>
+
+    <ng-container #gameOver *ngIf="gameOver">
+        <h1 class="text-center text-danger m-3 title">Game Over</h1>
+        <p class="text-center text-white m-3 title">You ran out of balls to draw</p>
+    </ng-container>
+
+</div>
