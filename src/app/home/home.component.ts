@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  pageRows = [
+    { header: 'This is thee best bingo game in the world!', imgUrl: 'assets/svg/game.svg' }
+  ]
   constructor() { }
 
   ngOnInit(): void {
