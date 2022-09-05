@@ -1,12 +1,7 @@
 <ul class="nav justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link font-bold text-white" [routerLink]="['home']" routerLinkActive="router-active">
-            <h3>Home</h3>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link font-bold text-white" [routerLink]="['bingo']" routerLinkActive="router-active">
-            <h3>Bingo</h3>
+    <li class="nav-item" *ngFor="let menuItem of menu">
+        <a class="nav-link font-bold text-white" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="[menuItem.routerLink]" routerLinkActive="router-active">
+            <h3>{{menuItem.label}}</h3>
         </a>
     </li>
 </ul>

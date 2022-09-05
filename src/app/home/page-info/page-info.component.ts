@@ -6,7 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./page-info.component.scss']
 })
 export class PageInfoComponent implements OnInit {
-  @Input() imgLeft = true;
   @Input() info: any;
   @Input() index = 0;
 
