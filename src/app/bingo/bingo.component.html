@@ -20,12 +20,16 @@
         </div>
         <div class="container">
             <app-grid [grid]="grid"></app-grid>
+
+            <div class="card">
+                <p class="text-center m-3 title">Remaining Balls</p>
+                <p>{{balls | json}}</p>
+            </div>
         </div>
     </ng-container>
 
     <ng-container #gameOver *ngIf="gameOver">
         <h1 class="text-center text-danger m-3 title">Game Over</h1>
-        <p class="text-center text-white m-3 title">You ran out of balls to draw</p>
+        <p class="text-center text-white m-3 title m-3 text-center">You ran out of balls to draw</p>
     </ng-container>
-
 </div>
