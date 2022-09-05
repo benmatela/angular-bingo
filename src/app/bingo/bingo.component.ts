@@ -20,6 +20,15 @@ export class BingoComponent implements OnInit {
     this.generateBalls();
   }
 
+  onReset() {
+    this.grid = [];
+    this.gameOver = false;
+    this.selectedBall = 0;
+    this.bingoDraw = Array.from(Array(75).keys());
+    this.generateInitialGrid();
+    this.generateBalls();
+  }
+
   /**
    * Initial display of the populated grids
    */
@@ -49,9 +58,6 @@ export class BingoComponent implements OnInit {
   onSpin() {
     if (this.balls.length > 0) {
       const random = Math.floor(Math.random() * this.balls.length);
-      console.log(random);
-      console.log(this.balls);
-      console.log(this.balls[random]);
       this.selectedBall = this.balls[random];
       this.balls.splice(random, 1);
 
