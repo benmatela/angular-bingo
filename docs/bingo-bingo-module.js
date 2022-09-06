@@ -321,7 +321,7 @@ class BingoComponent {
         else {
             this.gameOver = true;
         }
-        this.bingo = this.getBingoVerticalRows;
+        this.bingo = this.getBingoVerticalRows || this.getBingoHorizontalRows;
     }
     get getBingoVerticalRows() {
         let result = false;
@@ -335,6 +335,22 @@ class BingoComponent {
                     result = false;
                     break;
                 }
+            }
+            if (result) {
+                break;
+            }
+        }
+        return result;
+    }
+    get getBingoHorizontalRows() {
+        let result = false;
+        for (let i = 0; i < this.grid.length; i++) {
+            if (this.grid[i][0].startsWith('*') &&
+                this.grid[i + 1][0].startsWith('*') &&
+                this.grid[i + 2][0].startsWith('*') &&
+                this.grid[i + 3][0].startsWith('*') &&
+                this.grid[i + 4][0].startsWith('*')) {
+                result = true;
             }
             if (result) {
                 break;
