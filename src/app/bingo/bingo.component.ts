@@ -76,7 +76,7 @@ export class BingoComponent implements OnInit {
       this.gameOver = true;
     }
 
-    this.bingo = this.getBingoVerticalRows;
+    this.bingo = this.getBingoVerticalRows || this.getBingoHorizontalRows;
   }
 
   get getBingoVerticalRows(): boolean {
@@ -90,6 +90,25 @@ export class BingoComponent implements OnInit {
           result = false;
           break;
         }
+      }
+      if (result) {
+        break;
+      }
+    }
+    return result;
+  }
+
+  get getBingoHorizontalRows(): boolean {
+    let result = false;
+    for (let i = 0; i < this.grid.length; i++) {
+      if (
+        this.grid[i][0].startsWith('*') &&
+        this.grid[i + 1][0].startsWith('*') &&
+        this.grid[i + 2][0].startsWith('*') &&
+        this.grid[i + 3][0].startsWith('*') &&
+        this.grid[i + 4][0].startsWith('*')
+      ) {
+        result = true;
       }
       if (result) {
         break;
