@@ -1,12 +1,12 @@
 <div class="border grid-container card mb-2 col">
     <div class="m-2">
         <div id="gridHeaders" class="row">
-            <div id="{{header}}" *ngFor="let header of gridHeaders; let i = index;" class="col text-center font-bold grid-block grid-header">
+            <div [id]="header.toLowerCase()" *ngFor="let header of gridHeaders; let i = index;" class="col text-center font-bold grid-block grid-header">
                 {{header}}
             </div>
         </div>
         <div id="cards" class="row" *ngFor="let cards of grid;">
-            <div id="{{card}}" [ngClass]="{free: card === 'FREE' || card.startsWith('*')}" *ngFor="let card of cards; let i = index;"
+            <div id="{{card}}" [ngClass]="{free: card.startsWith('*')}" *ngFor="let card of cards; let i = index;"
                 class="col grid-block text-center font-bold border">
                 {{card}}
             </div>

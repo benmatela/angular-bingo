@@ -2,8 +2,15 @@
     <h3 id="title" class="text-center text-white m-3">Let's Play!</h3>
     <hr class="mt-4">
     <div class="container">
+        <ng-container #bingo *ngIf="!gameOver && bingo">
+            <div class="text center">
+                <h1>Bingo!You won!</h1>
+                <img id="bitcoinImg" [src]="bitcoinImg" height="300px">
+            </div>
+        </ng-container>
+
         <ng-container #gameNotOver *ngIf="!gameOver">
-            <p id="headerText" class="text-center text-white m-3 title">Draw random balls to fill the blocks..</p>
+            <p id="headerText" class="text-center text-white m-3 title">Draw random balls to fill in the blocks..</p>
             <div class="row">
                 <div class="col">
                     <h1 id="remainingBalls" class="text-center text-white m-3">{{balls.length}}</h1>
@@ -13,7 +20,7 @@
                     <h1 id="selectedBall" class="text-center text-white m-3">{{selectedBall}}</h1>
                     <div class="container">
                         <div class="text-center">
-                            <button id="drawBtn" class="btn spin-btn m-2" (click)="onDraw()">Draw!</button>
+                            <button id="drawBtn" class="btn spin-btn m-2" [disabled]="bingo" (click)="onDraw()">Draw!</button>
                         </div>
                     </div>
                 </div>
@@ -26,9 +33,9 @@
             </div>
         </ng-container>
 
-        <ng-container #gameOver *ngIf="gameOver">
+        <ng-container #gameOver *ngIf="gameOver && !bingo">
             <h1 id="title" class="text-center text-danger m-3">Game Over</h1>
-            <p id="errorMsg" class="text-center text-white m-3 text-center">You ran out of balls to draw</p>
+            <p id="errorMsg" class="text-center text-white m-3 text-center">You ran out of balls to draw from</p>
             <div class="text-center">
                 <button id="resetBtn" class="btn spin-btn m-2" (click)="onReset()">Reset</button>
             </div>
