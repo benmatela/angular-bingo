@@ -12,6 +12,8 @@ export class BingoComponent implements OnInit {
   selectedBall = 0;
   bingoDraw = Array.from(Array(75).keys());
   gameOver = false;
+  bingo = false;
+  bitcoinImg = 'assets/svg/bitcoin.svg';
 
   constructor() {}
 
@@ -20,15 +22,24 @@ export class BingoComponent implements OnInit {
     this.generateBalls();
   }
 
+  onReset() {
+    this.grid = [];
+    this.gameOver = false;
+    this.selectedBall = 0;
+    this.bingoDraw = Array.from(Array(75).keys());
+    this.generateInitialGrid();
+    this.generateBalls();
+  }
+
   /**
-   * Initial display of the populated grids
+   * Initial display of the populated grid
    */
   generateInitialGrid() {
-    for (let index = 0; index < 5; index++) {
+    for (let i = 0; i < 5; i++) {
       const row = [];
       for (let k = 0; k < 5; k++) {
-        if (index === 2 && k === 2) {
-          row.push('FREE');
+        if (i === 2 && k === 2) {
+          row.push('*');
         } else {
           row.push(`${Math.floor(Math.random() * 100)}`);
         }
@@ -46,12 +57,9 @@ export class BingoComponent implements OnInit {
     }
   }
 
-  onSpin() {
-    if (this.balls.length > 0) {
+  onDraw() {
+    if (this.balls.length > 1) {
       const random = Math.floor(Math.random() * this.balls.length);
-      console.log(random);
-      console.log(this.balls);
-      console.log(this.balls[random]);
       this.selectedBall = this.balls[random];
       this.balls.splice(random, 1);
 
@@ -67,5 +75,26 @@ export class BingoComponent implements OnInit {
     } else {
       this.gameOver = true;
     }
+
+    this.bingo = this.getBingoVerticalRows;
+  }
+
+  get getBingoVerticalRows(): boolean {
+    let result = false;
+    for (let i = 0; i < this.grid.length; i++) {
+      const cards = this.grid[i];
+      for (let j = 0; j < cards.length; j++) {
+        if (cards.every((card) => String(card).startsWith('*'))) {
+          result = true;
+        } else {
+          result = false;
+          break;
+        }
+      }
+      if (result) {
+        break;
+      }
+    }
+    return result;
   }
 }

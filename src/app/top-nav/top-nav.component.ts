@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-nav.component.scss']
 })
 export class TopNavComponent implements OnInit {
-
+  menu = [
+    { routerLink: '', label: 'Home', id: 'home' },
+    { routerLink: 'bingo', label: 'Bingo', id: 'bingo' }
+  ];
   constructor() { }
 
   ngOnInit(): void {

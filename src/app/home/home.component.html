@@ -1,1 +1,6 @@
-<p>home works!</p>
+<div class="container">
+    <h3 class="text-center text-white m-4">{{title}}</h3>
+    <div class="mb-4" *ngFor="let info of pageInfo; let i = index;">
+        <app-page-info [info]="info" [index]="i"></app-page-info>
+    </div>
+</div>
