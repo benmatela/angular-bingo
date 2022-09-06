@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  title = 'Welcome to the Random Ball Bingo Game!';
   pageInfo = [
     {
       header: 'This is thee best bingo game in the world!',

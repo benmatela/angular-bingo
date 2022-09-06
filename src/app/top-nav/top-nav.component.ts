@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavComponent implements OnInit {
   menu = [
-    { routerLink: '', label: 'Home' },
-    { routerLink: 'bingo', label: 'Bingo' }
+    { routerLink: '', label: 'Home', id: 'home' },
+    { routerLink: 'bingo', label: 'Bingo', id: 'bingo' }
   ];
   constructor() { }
 
