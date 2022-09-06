@@ -3,31 +3,30 @@
     <hr class="mt-4">
     <div class="container">
         <ng-container #bingo *ngIf="!gameOver && bingo">
-            <div class="text center">
-                <h1>Bingo!You won!</h1>
+            <div class="text-center">
+                <h1 class="text-white font-weight-bold">Bingo!You won!</h1>
                 <img id="bitcoinImg" [src]="bitcoinImg" height="300px">
             </div>
         </ng-container>
 
         <ng-container #gameNotOver *ngIf="!gameOver">
-            <p id="headerText" class="text-center text-white m-3 title">Draw random balls to fill in the blocks..</p>
-            <div class="row">
+            <p *ngIf="!bingo" id="headerText" class="text-center text-white m-3 title">Draw random balls to fill in the
+                blocks..</p>
+            <div class="row" *ngIf="!bingo">
                 <div class="col">
                     <h1 id="remainingBalls" class="text-center text-white m-3">{{balls.length}}</h1>
                     <p id="remainingBallsTitle" class="text-center text-white m-3">Remaining Balls</p>
                 </div>
                 <div class="col">
                     <h1 id="selectedBall" class="text-center text-white m-3">{{selectedBall}}</h1>
-                    <div class="container">
-                        <div class="text-center">
-                            <button id="drawBtn" class="btn spin-btn m-2" [disabled]="bingo" (click)="onDraw()">Draw!</button>
-                        </div>
+                    <div class="text-center">
+                        <button id="drawBtn" class="btn spin-btn m-2" (click)="onDraw()">Draw!</button>
                     </div>
                 </div>
             </div>
 
             <app-grid [grid]="grid"></app-grid>
-            <div class="card">
+            <div class="card" *ngIf="!bingo">
                 <p id="remainingBallsCardTitle" class="text-center m-3">Remaining Balls</p>
                 <p id="remainngBallsJson">{{balls | json}}</p>
             </div>
