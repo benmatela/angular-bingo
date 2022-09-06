@@ -157,12 +157,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function BingoComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, null, 5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h1", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Bingo!You won!");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "img", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BingoComponent_ng_container_5_Template_button_click_7_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r4.onReset(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Reset");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
@@ -171,61 +178,61 @@ function BingoComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx_r0.bitcoinImg, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
 } }
 function BingoComponent_ng_container_6_p_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Draw random balls to fill in the blocks..");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
 function BingoComponent_ng_container_6_div_3_Template(rf, ctx) { if (rf & 1) {
-    const _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 17);
+    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Remaining Balls");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "h1", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "h1", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BingoComponent_ng_container_6_div_3_Template_button_click_10_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r9); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r8.onDraw(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BingoComponent_ng_container_6_div_3_Template_button_click_10_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11); const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r10.onDraw(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Draw!");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r6.balls.length);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r8.balls.length);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r6.selectedBall);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r8.selectedBall);
 } }
 function BingoComponent_ng_container_6_div_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 22);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Remaining Balls");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p", 26);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](5, "json");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](5, 1, ctx_r7.balls));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](5, 1, ctx_r9.balls));
 } }
 function BingoComponent_ng_container_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, null, 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BingoComponent_ng_container_6_p_2_Template, 2, 0, "p", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, BingoComponent_ng_container_6_div_3_Template, 12, 2, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "app-grid", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BingoComponent_ng_container_6_div_5_Template, 6, 3, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, null, 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BingoComponent_ng_container_6_p_2_Template, 2, 0, "p", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, BingoComponent_ng_container_6_div_3_Template, 12, 2, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "app-grid", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BingoComponent_ng_container_6_div_5_Template, 6, 3, "div", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -239,17 +246,17 @@ function BingoComponent_ng_container_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx_r1.bingo);
 } }
 function BingoComponent_ng_container_7_Template(rf, ctx) { if (rf & 1) {
-    const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, null, 25);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 26);
+    const _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, null, 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Game Over");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "You ran out of balls to draw from");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 28);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BingoComponent_ng_container_7_Template_button_click_7_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r12); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r11.onReset(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BingoComponent_ng_container_7_Template_button_click_7_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r14); const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r13.onReset(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Reset");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -271,7 +278,9 @@ class BingoComponent {
         this.generateBalls();
     }
     onReset() {
+        this.bingo = false;
         this.grid = [];
+        this.balls = [];
         this.gameOver = false;
         this.selectedBall = 0;
         this.bingoDraw = Array.from(Array(75).keys());
@@ -321,7 +330,10 @@ class BingoComponent {
         else {
             this.gameOver = true;
         }
-        this.bingo = this.getBingoVerticalRows || this.getBingoHorizontalRows;
+        this.bingo =
+            this.getBingoVerticalRows ||
+                this.getBingoHorizontalRows ||
+                this.getBingoDiagonalRows;
     }
     get getBingoVerticalRows() {
         let result = false;
@@ -351,8 +363,30 @@ class BingoComponent {
                 this.grid[i + 3][0].startsWith('*') &&
                 this.grid[i + 4][0].startsWith('*')) {
                 result = true;
+                break;
             }
-            if (result) {
+        }
+        return result;
+    }
+    get getBingoDiagonalRows() {
+        let result = false;
+        for (let i = 0; i < this.grid.length; i++) {
+            if (i == 0 &&
+                this.grid[i][0].startsWith('*') &&
+                this.grid[i + 1][1].startsWith('*') &&
+                this.grid[i + 2][2].startsWith('*') &&
+                this.grid[i + 3][3].startsWith('*') &&
+                this.grid[i + 4][4].startsWith('*')) {
+                result = true;
+                break;
+            }
+            else if (i == 4 &&
+                this.grid[i][0].startsWith('*') &&
+                this.grid[i + 1][3].startsWith('*') &&
+                this.grid[i + 2][2].startsWith('*') &&
+                this.grid[i + 3][1].startsWith('*') &&
+                this.grid[i + 4][0].startsWith('*')) {
+                result = true;
                 break;
             }
         }
@@ -360,14 +394,14 @@ class BingoComponent {
     }
 }
 BingoComponent.ɵfac = function BingoComponent_Factory(t) { return new (t || BingoComponent)(); };
-BingoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BingoComponent, selectors: [["app-bingo"]], decls: 8, vars: 3, consts: [[1, "grid-container", "col-12"], ["id", "title", 1, "text-center", "text-white", "m-3"], [1, "mt-4"], [1, "container"], [4, "ngIf"], ["bingo", ""], [1, "text-center", "mb-4"], [1, "text-white", "font-weight-bold"], ["id", "bitcoinImg", "height", "300px", 3, "src"], ["gameNotOver", ""], ["id", "headerText", "class", "text-center text-white m-3 title", 4, "ngIf"], ["class", "row", 4, "ngIf"], [3, "grid"], ["class", "card", 4, "ngIf"], ["id", "headerText", 1, "text-center", "text-white", "m-3", "title"], [1, "row"], [1, "col"], ["id", "remainingBalls", 1, "text-center", "text-white", "m-3"], ["id", "remainingBallsTitle", 1, "text-center", "text-white", "m-3"], ["id", "selectedBall", 1, "text-center", "text-white", "m-3"], [1, "text-center"], ["id", "drawBtn", 1, "btn", "spin-btn", "m-2", 3, "click"], [1, "card"], ["id", "remainingBallsCardTitle", 1, "text-center", "m-3"], ["id", "remainngBallsJson"], ["gameOver", ""], ["id", "title", 1, "text-center", "text-danger", "m-3"], ["id", "errorMsg", 1, "text-center", "text-white", "m-3", "text-center"], ["id", "resetBtn", 1, "btn", "spin-btn", "m-2", 3, "click"]], template: function BingoComponent_Template(rf, ctx) { if (rf & 1) {
+BingoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BingoComponent, selectors: [["app-bingo"]], decls: 8, vars: 3, consts: [[1, "grid-container", "col-12"], ["id", "title", 1, "text-center", "text-white", "m-3"], [1, "mt-4"], [1, "container"], [4, "ngIf"], ["bingo", ""], [1, "text-center", "mb-4"], [1, "text-white", "font-weight-bold"], ["id", "bitcoinImg", "height", "200px", 3, "src"], [1, "text-center", "mt-2"], ["id", "resetBtn", 1, "btn", "spin-btn", 3, "click"], ["gameNotOver", ""], ["id", "headerText", "class", "text-center text-white m-3 title", 4, "ngIf"], ["class", "row", 4, "ngIf"], [3, "grid"], ["class", "card", 4, "ngIf"], ["id", "headerText", 1, "text-center", "text-white", "m-3", "title"], [1, "row"], [1, "col"], ["id", "remainingBalls", 1, "text-center", "text-white", "m-3"], ["id", "remainingBallsTitle", 1, "text-center", "text-white", "m-3"], ["id", "selectedBall", 1, "text-center", "text-white", "m-3"], [1, "text-center"], ["id", "drawBtn", 1, "btn", "spin-btn", "m-2", 3, "click"], [1, "card"], ["id", "remainingBallsCardTitle", 1, "text-center", "m-3"], ["id", "remainngBallsJson"], ["gameOver", ""], ["id", "title", 1, "text-center", "text-danger", "m-3"], ["id", "errorMsg", 1, "text-center", "text-white", "m-3", "text-center"], ["id", "resetBtn", 1, "btn", "spin-btn", "m-2", 3, "click"]], template: function BingoComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h3", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Let's Play!");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "hr", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BingoComponent_ng_container_5_Template, 6, 1, "ng-container", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BingoComponent_ng_container_5_Template, 9, 1, "ng-container", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, BingoComponent_ng_container_6_Template, 6, 4, "ng-container", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, BingoComponent_ng_container_7_Template, 9, 0, "ng-container", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

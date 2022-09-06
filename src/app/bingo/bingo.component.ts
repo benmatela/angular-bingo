@@ -23,7 +23,9 @@ export class BingoComponent implements OnInit {
   }
 
   onReset() {
+    this.bingo = false;
     this.grid = [];
+    this.balls = [];
     this.gameOver = false;
     this.selectedBall = 0;
     this.bingoDraw = Array.from(Array(75).keys());
@@ -76,7 +78,10 @@ export class BingoComponent implements OnInit {
       this.gameOver = true;
     }
 
-    this.bingo = this.getBingoVerticalRows || this.getBingoHorizontalRows;
+    this.bingo =
+      this.getBingoVerticalRows ||
+      this.getBingoHorizontalRows ||
+      this.getBingoDiagonalRows;
   }
 
   get getBingoVerticalRows(): boolean {
@@ -109,8 +114,34 @@ export class BingoComponent implements OnInit {
         this.grid[i + 4][0].startsWith('*')
       ) {
         result = true;
+        break;
       }
-      if (result) {
+    }
+    return result;
+  }
+
+  get getBingoDiagonalRows(): boolean {
+    let result = false;
+    for (let i = 0; i < this.grid.length; i++) {
+      if (
+        i == 0 &&
+        this.grid[i][0].startsWith('*') &&
+        this.grid[i + 1][1].startsWith('*') &&
+        this.grid[i + 2][2].startsWith('*') &&
+        this.grid[i + 3][3].startsWith('*') &&
+        this.grid[i + 4][4].startsWith('*')
+      ) {
+        result = true;
+        break;
+      } else if (
+        i == 4 &&
+        this.grid[i][0].startsWith('*') &&
+        this.grid[i + 1][3].startsWith('*') &&
+        this.grid[i + 2][2].startsWith('*') &&
+        this.grid[i + 3][1].startsWith('*') &&
+        this.grid[i + 4][0].startsWith('*')
+      ) {
+        result = true;
         break;
       }
     }
