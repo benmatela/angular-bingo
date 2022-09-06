@@ -190,8 +190,8 @@ function BingoComponent_ng_container_6_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "h1", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BingoComponent_ng_container_6_div_3_Template_button_click_10_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r9); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r8.onDraw(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Draw!");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -206,11 +206,11 @@ function BingoComponent_ng_container_6_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r6.selectedBall);
 } }
 function BingoComponent_ng_container_6_div_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Remaining Balls");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](5, "json");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -240,15 +240,15 @@ function BingoComponent_ng_container_6_Template(rf, ctx) { if (rf & 1) {
 } }
 function BingoComponent_ng_container_7_Template(rf, ctx) { if (rf & 1) {
     const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, null, 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, null, 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 26);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Game Over");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "You ran out of balls to draw from");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BingoComponent_ng_container_7_Template_button_click_7_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r12); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r11.onReset(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Reset");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -344,7 +344,7 @@ class BingoComponent {
     }
 }
 BingoComponent.ɵfac = function BingoComponent_Factory(t) { return new (t || BingoComponent)(); };
-BingoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BingoComponent, selectors: [["app-bingo"]], decls: 8, vars: 3, consts: [[1, "grid-container", "col-12"], ["id", "title", 1, "text-center", "text-white", "m-3"], [1, "mt-4"], [1, "container"], [4, "ngIf"], ["bingo", ""], [1, "text-center"], [1, "text-white", "font-weight-bold"], ["id", "bitcoinImg", "height", "300px", 3, "src"], ["gameNotOver", ""], ["id", "headerText", "class", "text-center text-white m-3 title", 4, "ngIf"], ["class", "row", 4, "ngIf"], [3, "grid"], ["class", "card", 4, "ngIf"], ["id", "headerText", 1, "text-center", "text-white", "m-3", "title"], [1, "row"], [1, "col"], ["id", "remainingBalls", 1, "text-center", "text-white", "m-3"], ["id", "remainingBallsTitle", 1, "text-center", "text-white", "m-3"], ["id", "selectedBall", 1, "text-center", "text-white", "m-3"], ["id", "drawBtn", 1, "btn", "spin-btn", "m-2", 3, "click"], [1, "card"], ["id", "remainingBallsCardTitle", 1, "text-center", "m-3"], ["id", "remainngBallsJson"], ["gameOver", ""], ["id", "title", 1, "text-center", "text-danger", "m-3"], ["id", "errorMsg", 1, "text-center", "text-white", "m-3", "text-center"], ["id", "resetBtn", 1, "btn", "spin-btn", "m-2", 3, "click"]], template: function BingoComponent_Template(rf, ctx) { if (rf & 1) {
+BingoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BingoComponent, selectors: [["app-bingo"]], decls: 8, vars: 3, consts: [[1, "grid-container", "col-12"], ["id", "title", 1, "text-center", "text-white", "m-3"], [1, "mt-4"], [1, "container"], [4, "ngIf"], ["bingo", ""], [1, "text-center", "mb-4"], [1, "text-white", "font-weight-bold"], ["id", "bitcoinImg", "height", "300px", 3, "src"], ["gameNotOver", ""], ["id", "headerText", "class", "text-center text-white m-3 title", 4, "ngIf"], ["class", "row", 4, "ngIf"], [3, "grid"], ["class", "card", 4, "ngIf"], ["id", "headerText", 1, "text-center", "text-white", "m-3", "title"], [1, "row"], [1, "col"], ["id", "remainingBalls", 1, "text-center", "text-white", "m-3"], ["id", "remainingBallsTitle", 1, "text-center", "text-white", "m-3"], ["id", "selectedBall", 1, "text-center", "text-white", "m-3"], [1, "text-center"], ["id", "drawBtn", 1, "btn", "spin-btn", "m-2", 3, "click"], [1, "card"], ["id", "remainingBallsCardTitle", 1, "text-center", "m-3"], ["id", "remainngBallsJson"], ["gameOver", ""], ["id", "title", 1, "text-center", "text-danger", "m-3"], ["id", "errorMsg", 1, "text-center", "text-white", "m-3", "text-center"], ["id", "resetBtn", 1, "btn", "spin-btn", "m-2", 3, "click"]], template: function BingoComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h3", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Let's Play!");
