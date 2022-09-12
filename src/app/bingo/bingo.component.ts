@@ -96,9 +96,7 @@ export class BingoComponent implements OnInit {
           break;
         }
       }
-      if (result) {
-        break;
-      }
+      if (result) break;
     }
     return result;
   }
